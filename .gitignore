@@ -1,0 +1,20 @@
+# Build output
+*.o
+door/c64door
+spike/
+*.so
+door/vice-libretro-build/
+
+# Commodore ROMs are never published: each sysop supplies their own (door/INSTALL.md)
+door/system/
+*.bin
+*.rom
+
+# Per-BBS data
+door/logs/
+door/players/
+door/library/*
+!door/library/library.txt
+
+# Python
+__pycache__/

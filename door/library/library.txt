@@ -1,0 +1,3 @@
+# title | one-line description | disk files in this folder, comma-separated (the first goes in drive 8)
+Hessian | Covert Bitops' freeware action game (2013) | hessian.d64
+Edge of Disgrace | Booze Design's demo, X 2008 winner (swap sides with F12) | EdgeOfDisgrace_0.d64,EdgeOfDisgrace_1a.d64,EdgeOfDisgrace_1b.d64

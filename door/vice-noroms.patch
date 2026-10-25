@@ -1,0 +1,15 @@
+diff --git a/retrodep/embedded/c64embedded.c b/retrodep/embedded/c64embedded.c
+index a293be4..7c68162 100644
+--- a/retrodep/embedded/c64embedded.c
++++ b/retrodep/embedded/c64embedded.c
+@@ -102,6 +102,10 @@ size_t embedded_check_file(const char *name, unsigned char *dest, int minsize, i
+ {
+     size_t retval;
+ 
++    /* The C64 door: no Commodore ROM is built in. Every ROM is read from the system folder (system/vice/C64 and
++     * system/vice/DRIVES), where the sysop puts their own. The palettes stay built in (embedded_palette_load). */
++    return 0;
++
+     if ((retval = embedded_check_extra(name, dest, minsize, maxsize)) != 0) {
+         return retval;
+     }
