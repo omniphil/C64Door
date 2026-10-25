@@ -35,7 +35,9 @@ once. While the drive is busy a small 1541 light shows in the picture's corner.
 
 The box needs **libjxl 0.11 or newer** (Ubuntu 25.10 has it; 0.7 makes lossless pictures about 3 times bigger),
 **lrzsz** (`rz`/`sz`, for uploads and downloads) and, for the sandbox, **bubblewrap** (`bwrap`). Without a working
-bwrap the C64 still runs, only not boxed in.
+bwrap the C64 still runs, only not boxed in. Building needs **git, gcc, g++ and make** (on Ubuntu:
+`sudo apt install git build-essential libjxl0.11 lrzsz bubblewrap`). libjxl's headers come with the door
+(`jxl_include/`) and the library is loaded at run time, so no -dev package is needed.
 
 ## Steps
 
